@@ -149,6 +149,37 @@ class LinkedList{
             curr = curr.next;
         }
     }
+
+
+    isEmpty = () =>{
+        if(this.size === 0)
+            console.log("Linked List IS Empty")
+    }
+
+
+    toString = () =>{
+        let curr = this.head;
+        let llString = ""
+        while(curr){
+            llString += curr.data + "->";
+            curr = curr.next;
+        }
+        console.log(llString)
+
+    }
+
+
+
+    toArray = () =>{
+        let curr = this.head;
+        let llArray = []
+        while(curr){
+            llArray.push(curr.data);
+            curr = curr.next;
+        }
+        console.log(llArray)
+
+    }
 }
 
 let l1 = new LinkedList();
@@ -158,9 +189,11 @@ l1.addLast(43);
 l1.addFirst(98);
 l1.addFirst(29);
 l1.insertAt(2,87)
-l1.removeFirst();
-l1.removeLast()
-l1.showSize();
-l1.removeIndex(1)
+// l1.removeFirst();
+// l1.removeLast()
+// l1.showSize();
+// l1.removeIndex(1)
 l1.printList()
-l1.search(233)
+// l1.toString()
+l1.toArray()
+// l1.search(233)
