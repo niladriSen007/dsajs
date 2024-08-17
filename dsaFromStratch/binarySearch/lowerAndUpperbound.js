@@ -4,9 +4,10 @@ function lowerBound(arr, target) {
   let begin = 0
   let end = arr.length - 1
   let mid = Math.floor(begin + (end - begin) / 2)
-  while (begin < end) {
+  while (begin <= end) {
     if (arr[mid] >= target) {
-      end = answer = mid
+      end  = mid - 1
+      answer = mid
     } else begin = mid + 1
     mid = Math.floor(begin + (end - begin) / 2)
   }
