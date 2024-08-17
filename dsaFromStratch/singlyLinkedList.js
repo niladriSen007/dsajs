@@ -74,6 +74,21 @@ class SinglyLinkedList {
     }
     this.size -= 1
   }
+
+  printList(){
+    let curr = this.head;
+    while(curr.next != null){
+      console.log(curr);
+      curr = curr.next
+    }
+  }
+
+  isEmpty(){
+    if(this.size ==0)
+      console.log("True")
+    else
+      console.log("False")
+  }
 }
 
 const sll = new SinglyLinkedList()
@@ -81,5 +96,6 @@ sll.addNodeAtFirst(2)
 sll.addNodeAtFirst(12)
 sll.addNodeAtFirst(22)
 sll.addNodeAtGivenIndex(90, 1)
-sll.removeFromIndex(2)
-console.log(sll)
+/* sll.removeFromIndex(2) */
+sll.printList()
+sll.isEmpty()
