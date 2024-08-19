@@ -6,7 +6,6 @@ function lowerBound(arr, target) {
   let mid = Math.floor(begin + (end - begin) / 2)
   while (begin <= end) {
     if (arr[mid] >= target) {
- day-05-Binary-search-lower-and-upper-bound-program
       end = mid - 1
       answer = mid
     } else begin = mid + 1
