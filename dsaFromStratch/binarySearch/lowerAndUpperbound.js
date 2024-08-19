@@ -1,4 +1,4 @@
-/* Lower bound = Index whose value is greater than or equals to the target */
+/* Lower bound = First Index whose value is greater than or equals to the target */
 function lowerBound(arr, target) {
   let answer = arr.length
   let begin = 0
@@ -6,8 +6,8 @@ function lowerBound(arr, target) {
   let mid = Math.floor(begin + (end - begin) / 2)
   while (begin <= end) {
     if (arr[mid] >= target) {
-      end = mid - 1
       answer = mid
+      end = mid - 1
     } else begin = mid + 1
     mid = Math.floor(begin + (end - begin) / 2)
   }
