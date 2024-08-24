@@ -49,5 +49,5 @@ function findFirstAndLastPosition(arr, target) {
   return [firstIndex, lastIndex]
 }
 
-let [firstIndex, lastIndex] = findFirstAndLastPosition([5, 7, 7, 8, 8, 10], 8)
+let [firstIndex, lastIndex] = findFirstAndLastPosition([2,4,6,8,8,8,11,13], 10)
 console.log(firstIndex, lastIndex)
