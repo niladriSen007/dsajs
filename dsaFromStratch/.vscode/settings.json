@@ -18,5 +18,8 @@
     "titleBar.inactiveBackground": "#0d42ba99",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#0D42BA"
+  "peacock.color": "#0D42BA",
+  "cSpell.words": [
+    "Occurance"
+  ]
 }
